@@ -9,11 +9,16 @@ off = ['Off Day']
 metabolic = ['Jump Rope', 'Burpees','Jumping Jacks','Mountain Climbers']
 gymnastics = ['air squat','pull up','push up', 'dip', 'sit up', 'lunge']
 weightlifting = ['deadlift','shoulder press','squat','kettlbell swing','thruster','benchpress']
-wod_type = ['Rounds For Time','As Many Reps As Possible']
+wod_type = ['Rounds For Time','As Many Rounds As Possible']
 
-beg_move1 = random.randint(1,5)
-beg_move2 = random.randint(1,5)
-beg_move3 = random.randint(1,5)
+beg_gym_move1 = random.randint(1,5)
+beg_gym_move2 = random.randint(1,5)
+beg_gym_move3 = random.randint(1,5)
+
+beg_lift_move1 = random.randint(1,5)
+beg_lift_move2 = random.randint(1,5)
+beg_lift_move3 = random.randint(1,5)
+
 
 beg_wod1 = random.randint(5,10)
 beg_wod2 = random.randint(5,10)
@@ -28,4 +33,12 @@ gym = random.choice(gymnastics)
 lift = random.choice(weightlifting)
 workout = random.choice(wod_type)
 
-print(f'{beg_met1,meta},{beg_move1,gym},{beg_move1,lift},{beg_wod1,workout}')
+
+
+triplet_wod2 = {
+    workout:beg_wod1,
+    meta:beg_met1,
+    gym:beg_gym_move1,
+    lift:beg_lift_move1
+    }
+print((triplet_wod2))
