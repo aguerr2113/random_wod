@@ -23,4 +23,9 @@ beg_met1 = random.randint(10,15)
 beg_met2 = random.randint(10,15)
 beg_met3 = random.randint(10,15)
 
-print(f'{beg_met1},{beg_move1},{beg_wod1}')
+meta = random.choice(metabolic)
+gym = random.choice(gymnastics)
+lift = random.choice(weightlifting)
+workout = random.choice(wod_type)
+
+print(f'{beg_met1,meta},{beg_move1,gym},{beg_move1,lift},{beg_wod1,workout}')
