@@ -139,16 +139,25 @@ up_wod_l2 = {
     lift5:beg_lift_move5
     }
 
-meta_weekbhb = {
-        "day1":str(up_wod_m1).replace("{","").replace("}", ""),
-        "day2":str(dup_wod_mg).replace("{","").replace("}", ""),
-        "day3":str(triplet_wod_m).replace("{","").replace("}", ""),
-        "day4":str(dup_wod_ml).replace("{","").replace("}", ""),
-        "day5":str(up_wod_m2).replace("{","").replace("}", ""),
-        "day6":str(off).replace("{","").replace("}", ""),
-        "day7":str(off).replace("{","").replace("}", "")
-        }
+newString1 = str(up_wod_m1).replace("{",'').replace("}", '')
+newString2 = str(dup_wod_mg).replace("{",'').replace("}", '')
+newString3 = str(triplet_wod_m).replace("{",'').replace("}", '')
+newString4 = str(dup_wod_ml).replace("{",'').replace("}", '')
+newString5 = str(up_wod_m2).replace("{",'').replace("}", '')
+newString6 = str(off).replace("{",'').replace("}", '')
+newString7 = str(off).replace("{",'').replace("}", '')
 
+
+
+meta_weekbhb = {
+        "day1":newString1,
+        "day2":newString2,
+        "day3":newString3,
+        "day4":newString4,
+        "day5":newString5,
+        "day6":newString6,
+        "day7":newString7
+        }
 @app.route('/',methods=['GET','POST'])
 def index():
     return render_template('index.html',meta_weekbhb = meta_weekbhb)
