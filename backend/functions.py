@@ -146,39 +146,58 @@ up_wod_l2 = {
     workout5:beg_wod5,
     lift5:beg_lift_move5
     }
+upwodm1 = str(up_wod_m1).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+dupwodm1 =str(dup_wod_ml).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+tripwodm = str(triplet_wod_m).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+dupwodmg = str(dup_wod_mg).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+upwodm2 = str(up_wod_m2).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+office = str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+
+upwodg1 = str(up_wod_g1).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+dupwodgl = str(dup_wod_gl).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+tripletwodg = str(triplet_wod_g).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+dupwodgm = str(dup_wod_gm).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+upwodg2 = str(up_wod_g2).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+
+upwodl1 = str(up_wod_l1).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+dupwodlm = str(dup_wod_lm).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+tripletwodl = str(triplet_wod_l).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+dupwodlg = str(dup_wod_lg).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+upwodl2 = str(up_wod_l2).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+
 
 
 
 
 meta_week_1 = {
-    "day1":str(up_wod_m1).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day2":str(dup_wod_ml).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day3":str(triplet_wod_m).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day4":str(dup_wod_mg).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day5":str(up_wod_m2).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day6":str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day7":str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+    "day1":upwodm1,
+    "day2":dupwodm1,
+    "day3":tripwodm,
+    "day4":dupwodmg,
+    "day5":upwodm2,
+    "day6":office,
+    "day7":office
 }
 gym_week_1 = {
-    "day1":str(up_wod_g1).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day2":str(dup_wod_gl).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day3":str(triplet_wod_g).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day4":str(dup_wod_gm).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day5":str(up_wod_g2).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day6":str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}", ""),
-    "day7":str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}", "")
+    "day1":upwodg1,
+    "day2":dupwodgl,
+    "day3":tripletwodg,
+    "day4":dupwodgm,
+    "day5":upwodg2,
+    "day6":office,
+    "day7":office
 }
 
 
 
 lift_week_1 = {
-    'day1':str(up_wod_l1).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day2':str(dup_wod_lm).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day3':str(triplet_wod_l).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day4':str(dup_wod_lg).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day5':str(up_wod_l2).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day6':str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}",""),
-    'day7':str(off).replace(",","\n").replace("'","\n").replace("{","").replace("}","")
+    'day1':upwodl1,
+    'day2':dupwodlm,
+    'day3':tripletwodl,
+    'day4':dupwodlg,
+    'day5':upwodl2,
+    'day6':office,
+    'day7':office
 }
 
 
